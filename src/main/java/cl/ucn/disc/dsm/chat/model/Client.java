@@ -91,8 +91,8 @@ public class Client extends JFrame implements ActionListener, KeyListener {
 
             if(bfr.ready()){
                 msg = bfr.readLine();
-                if(msg.equals("Logout"))
-                    text.append("Server out! \r\n");
+                if(msg.equals("Salir"))
+                    text.append("Server fuera de linea! \r\n");
                 else
                     text.append(msg+"\r\n");
             }
@@ -167,9 +167,9 @@ public class Client extends JFrame implements ActionListener, KeyListener {
      * @throws IOException en caso de algun error.
      */
     public Client() throws IOException{
-        JLabel lblMessage = new JLabel("Check!");
+        JLabel lblMessage = new JLabel("BIENVENIDO");
         ip = new JTextField("127.0.0.1");
-        port = new JTextField("12345");
+        port = new JTextField("9000");
         name = new JTextField("Cliente");
         Object[] texts = {lblMessage, ip, port, name};
         JOptionPane.showMessageDialog(null, texts);
