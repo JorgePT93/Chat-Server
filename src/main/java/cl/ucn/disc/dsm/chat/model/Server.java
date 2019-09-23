@@ -1,5 +1,16 @@
 package cl.ucn.disc.dsm.chat.model;
 
+/**
+ * Tarea de DSM: ChatServer
+ *
+ * Profesor, en el presente proyecto se presenta la funcionalidad
+ * de un servidor de chat a traves de una interfaz. Para poder realizar
+ * el manejo correcto de este proyecto, primero se debe ejecutar la clase "Server"
+ * y luego la clase "Client".
+ *
+ * @project: Chat Server
+ * @author: Jorge
+ */
 
 import java.io.*;
 import java.net.*;
