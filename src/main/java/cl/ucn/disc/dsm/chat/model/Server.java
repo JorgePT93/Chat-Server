@@ -1,5 +1,7 @@
 package cl.ucn.disc.dsm.chat.model;
-
+/**
+ * @author: Jorge
+ */
 
 import java.io.*;
 import java.net.*;

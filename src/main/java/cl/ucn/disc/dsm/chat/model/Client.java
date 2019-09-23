@@ -1,4 +1,7 @@
 package cl.ucn.disc.dsm.chat.model;
+/**
+ * @author: Jorge
+ */
 
 import javax.swing.*;
 import java.awt.*;
