@@ -1,5 +1,13 @@
 package cl.ucn.disc.dsm.chat.model;
 /**
+ * Tarea de DSM: ChatServer
+ *
+ * Profesor, en el presente proyecto se presenta la funcionalidad
+ * de un servidor de chat a traves de una interfaz. Para poder realizar
+ * el manejo correcto de este proyecto, primero se debe ejecutar la clase "Server"
+ * y luego la clase "Client".
+ *
+ * @project: Chat Server
  * @author: Jorge
  */
 
@@ -70,7 +78,7 @@ public class Client extends JFrame implements ActionListener, KeyListener {
             text.append("Desconectado \r\n");
         }else{
             bufferedWriter.write(msg+"\r\n");
-            text.append( name.getText() + " dice -> " +         message.getText()+"\r\n");
+            text.append( name.getText() + " dice: " +         message.getText()+"\r\n");
         }
         bufferedWriter.flush();
         message.setText("");
@@ -206,7 +214,7 @@ public class Client extends JFrame implements ActionListener, KeyListener {
         setContentPane(pnlContent);
         setLocationRelativeTo(null);
         setResizable(false);
-        setSize(250,300);
+        setSize(250,350);
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }

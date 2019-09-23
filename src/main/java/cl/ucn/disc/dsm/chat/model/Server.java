@@ -1,7 +1,5 @@
 package cl.ucn.disc.dsm.chat.model;
-/**
- * @author: Jorge
- */
+
 
 import java.io.*;
 import java.net.*;
@@ -82,7 +80,7 @@ public class Server extends Thread{
 
     /**
      * Metodo que envia los mensajes a todos los usuarios conectados al servidor.
-     * Cuando un cliente envia un mensaje, el servidor lo recive y lo envia a
+     * Cuando un cliente envia un mensaje, el servidor lo recibe y lo envia a
      * los demas usuarios coenctados.
      *
      * @param bufferedWriterOutput
@@ -96,7 +94,7 @@ public class Server extends Thread{
         for(BufferedWriter bw :  clients){
             bwS = (BufferedWriter)bw;
             if(!(bufferedWriterOutput == bwS)){
-                bw.write(name + " dice-> " + message+"\r\n");
+                bw.write(name + " dice: " + message+"\r\n");
                 bw.flush();
             }
         }
