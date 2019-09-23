@@ -7,6 +7,9 @@ package cl.ucn.disc.dsm.chat.model;
  * el manejo correcto de este proyecto, primero se debe ejecutar la clase "Server"
  * y luego la clase "Client".
  *
+ * NOTA: Se recomienda encarecidamente utilizar los parametros especificados
+ * previamente en las interfaces.
+ *
  * @project: Chat Server
  * @author: Jorge
  */
